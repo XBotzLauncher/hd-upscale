@@ -1,0 +1,27 @@
+hd-upscale
+Copyright (c) 2026 hd-upscale contributors
+
+This product includes model weights from the Real-ESRGAN project.
+
+Real-ESRGAN
+Copyright (c) 2021, Xintao Wang
+License: BSD 3-Clause
+https://github.com/xinntao/Real-ESRGAN
+
+Bundled file: models/realesrgan-x4v3.onnx
+Derived from: realesr-general-x4v3.pth (release v0.2.5.0)
+Source: https://github.com/xinntao/Real-ESRGAN/releases/tag/v0.2.5.0
+Conversion: PyTorch -> ONNX, opset 17, dynamic input size, weights unchanged.
+
+The model weights are provided "AS IS", without warranty of any kind, express
+or implied. The full BSD 3-Clause text is in models/LICENSE. That license
+applies to the model file, not to this project's source code (MIT, see LICENSE).
+
+Real-ESRGAN is a research project. If you use it in academic work, cite:
+
+  @inproceedings{wang2021realesrgan,
+    title={Real-ESRGAN: Training Real-World Blind Super-Resolution with Pure Synthetic Data},
+    author={Wang, Xintao and Xie, Liangbin and Dong, Chao and Shan, Ying},
+    booktitle={International Conference on Computer Vision Workshops (ICCVW)},
+    year={2021}
+  }

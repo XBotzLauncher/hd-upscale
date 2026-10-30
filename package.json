@@ -1,0 +1,67 @@
+{
+  "name": "hd-upscale",
+  "version": "0.1.0",
+  "description": "Real-ESRGAN 4x AI upscaler for Node.js (ONNX, CPU)",
+  "type": "module",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js",
+      "default": "./src/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "models",
+    "cli.js",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "bin": {
+    "hd-upscale": "cli.js"
+  },
+  "sideEffects": false,
+  "keywords": [
+    "upscale",
+    "super-resolution",
+    "real-esrgan",
+    "onnx",
+    "onnxruntime",
+    "image",
+    "sharp",
+    "ai",
+    "4x"
+  ],
+  "author": "XBotzLauncher",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XBotzLauncher/hd-upscale.git"
+  },
+  "homepage": "https://github.com/XBotzLauncher/hd-upscale#readme",
+  "bugs": {
+    "url": "https://github.com/XBotzLauncher/hd-upscale/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test",
+    "bench": "node bench.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "onnxruntime-node": "^1.23.0",
+    "sharp": "^0.34.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.0.0"
+  }
+}
